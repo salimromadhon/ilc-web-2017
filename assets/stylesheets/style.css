@@ -1,0 +1,339 @@
+@import "normalize.css";
+
+body {
+	font-family: "Segoe UI", Arial, Helvetica;
+	color: #444;
+	background-color: white;
+}
+
+a,
+a:target {
+	color: #558004;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #6DA505;
+}
+
+.site-nav {
+	background-color: white;
+	background-clip: padding-box;
+	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	box-shadow: 0 2px 2px rgba(0,0,0,.2);
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 999;
+}
+
+.site-header {
+	float: left;
+	line-height: 1em;
+}
+
+.site-header img {
+	max-width: 100%;
+}
+
+.site-menu {
+	float: right;
+	margin-top: 1.8em;
+}
+
+.site-menu,
+.site-menu li {
+	padding: 0;
+}
+
+.site-menu li {
+	display: inline-block;
+	margin: .5em;
+}
+
+.site-menu li.selected {
+	background-color: #333;
+	padding: .5em 1em;
+	margin: 0 .5em;
+	border-radius: 1em;
+}
+
+.site-menu li a {color: #333}
+
+.site-menu li.selected a {color: white}
+
+.site-menu li:first-child {margin-left: 0}
+
+.site-menu li:last-child {margin-right: 0}
+
+.outer-wrapper {
+	width: 90%;
+	max-width: 900px;
+	padding: 0 5%;
+	margin: 0 auto;
+}
+
+.banner {
+	background: black url("../images/teaching-background.jpeg") no-repeat center center;
+	background-size: cover;
+	background-position: fixed;
+	padding: 7% 0;
+	text-align: center;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.banner .quote p {
+	font-size: 1.5em;
+	color: white;
+	text-shadow: 0 2px 2px rgba(0,0,0,.4);
+}
+
+.banner .quote p:first-child {
+	font-family: "Bell MT";
+	font-size: 3em;
+}
+
+.banner .btn {
+	margin-top: 2em;
+}
+
+.btn {
+	display: inline-block;
+	color: white;
+	background-color: #4C78AF;
+	padding: 1em 2em;
+	border-radius: 2em;
+	background-clip: padding-box;
+	border: 1px solid rgba(0,0,0,.1);
+	text-shadow: 0 1px 1px rgba(0,0,0,.2);
+	box-shadow: 0 2px 2px rgba(0,0,0,.2);
+}
+
+.btn:hover {
+	background-color: #4870A2;
+	color: white;
+}
+
+.btn.green {
+	background-color: #6DA505;
+}
+
+.btn.green:hover {
+	background-color: #629405;
+}
+
+.clear {
+	float: none;
+	clear: both;
+}
+
+.prologue {line-height: 1.5em}
+
+.prologue div {
+	text-align: center;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.prologue .picture img {
+	width: 100%;
+	border-radius: 50%;
+	position: absolute;
+	top: 3em;
+	left: 50%;
+	z-index: 2;
+}
+
+.prologue .picture {
+	float: left;
+	width: 20%;
+	position: relative;
+}
+
+.prologue .text h3 {
+	font-family: "Bell MT";
+	font-size: 1.5em;
+	line-height: 1.2em;
+}
+
+.prologue .text {
+	background-color: whitesmoke;
+	float: right;
+	width: 80%;
+	padding: 5% 10% 5% 20%;
+	position: relative;
+}
+
+.prologue .text:before {
+	content: "";
+	position: absolute;
+	background-color: silver;
+	width: 25%;
+	top: 0;
+	left: -25%;
+	bottom: 0;
+	z-index: 1;
+}
+
+.prologue.blue .picture {
+	float: right;
+}
+
+.prologue.blue .picture img {
+	left: auto;
+	right: 50%;
+}
+
+.prologue.blue .text {
+	background-color: #CEE3FF;
+	color: #5782BF;
+	padding: 5% 20% 5% 10%;
+	float: left;
+}
+
+.prologue.blue .text:before {
+	background-color: #3D6DB1;
+	left: auto;
+	right: -25%;
+}
+
+.prologue.red .text {
+	background-color: #FACCCC;
+	color: #B94F50;
+}
+
+.prologue.red .text:before {
+	background-color: #AB3335;
+}
+
+.suggestion {
+	width: 60%;
+	margin-left: 40%;
+	padding: 10% 5%;
+	line-height: 1.5em;
+	position: relative;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.suggestion:before {
+	content: "";
+	width: 66.5%;
+	position: absolute;
+	top: 0;
+	left: -66.5%;
+	bottom: 0;
+	background: url("../images/tree-of-science.jpg") no-repeat left bottom;
+	background-size: 100%;
+}
+
+.suggestion h3 {
+	font-family: "Bell MT";
+	font-size: 2em;
+	line-height: 1.1em;
+}
+
+.ask {
+	background-color: #B9D440;
+	color: #5C7D11;
+	padding: 5%;
+	text-align: center;
+}
+
+.ask .number {
+	font-size: 2em;
+	font-weight: bold;
+	color: white;
+	line-height: 0;
+}
+
+.site-footer {
+	background-color: black;
+	color: silver;
+	padding: 5% 0;
+}
+
+.site-footer .text {
+	width: 80%;
+	float: left;
+}
+
+.site-footer .watermark {
+	width: 15%;
+	float: right;
+}
+
+.site-footer .watermark img {
+	width: 100%;
+}
+
+.site-footer h2 {
+	font-family: "Segoe UI Light", "Segoe UI", Arial, Helvetica;
+	font-weight: normal;
+	color: white;
+	display: inline-block;
+	border-bottom: 1px solid #333;
+}
+
+.cover {
+	background-color: #444;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	font-size: 1.5em;
+	padding: 7% 0;
+	color: white;
+	text-shadow: 0 2px 2px rgba(0,0,0,.4);
+}
+
+.page-profile .cover {
+	background-image: url("../images/anak-sd.jpg");
+	background-position: top center;
+}
+
+.page-contrib .cover {
+	background-image: url("../images/sekolah-darurat.jpg");
+}
+
+.page-faq .cover {
+	background-image: url("../images/sekolah-darurat-3.jpg");
+}
+
+.wrap {padding: 5% 0}
+
+@media screen and (max-width:800px) {
+	.site-header,
+	.site-menu {
+		float: none
+	}
+	.fit {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width:400px) {
+	.site-nav {
+		position: relative;
+	}
+	.gap {display: none}
+	.site-menu li,
+	.site-menu li:first-child,
+	.site-menu li:last-child {
+		display: block;
+		margin: 0;
+		padding: .5em 5%;
+	}
+
+	.site-menu li.selected {
+		background-color: #333;
+		padding: .5em 5%;
+		margin: .5em 0;
+	}
+}

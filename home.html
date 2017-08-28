@@ -1,0 +1,108 @@
+<!doctype HTML>
+<html lang="id">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">
+		<link href="assets/images/favicon.png" rel="shortcut icon" type="image/x-icon">
+		<title>Yayasan Mendidik Bangsa</title>
+		<script src="assets/scripts/jquery-3.1.0.min.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<nav class="site-nav">
+			<div class="outer-wrapper">
+				<header class="site-header">
+					<h1><img src="assets/images/logo.png" alt="Yayasan Mendidik Bangsa"></h1>
+				</header>
+				<ul class="site-menu">
+					<li class="selected"><a href="home.html">Beranda</a></li>
+					<li><a href="profile.html">Profil</a></li>
+					<li><a href="contrib.html">Bergabung</a></li>
+					<li><a href="faq.html"><abbr title="Frequently Asked Questions">FAQ</abbr></a></li>
+				</ul>
+				<div class="clear"></div> <!-- Clear floating -->
+			</div>
+		</nav>
+		<div class="gap"></div> <!-- Just to push down based on `.site-nav` height -->
+		<section class="banner">
+			<div class="quote outer-wrapper">
+				<p>&ldquo;Pendidikan adalah senjata paling ampuh untuk mengubah dunia&rdquo;</p>
+				<p>Nelson Mandela</p>
+				<a class="btn green" href="#site-main">Lebih lanjut</a>
+			</div>
+		</section>
+		<section id="site-main" class="outer-wrapper fit">
+			<div class="prologue blue">
+				<div class="picture">
+					<img src="assets/images/kurang-beruntung.jpg" alt="Ilustrasi, anak yang kurang beruntung.">
+				</div>
+				<div class="text">
+					<h3>Mereka yang kurang beruntung</h3>
+					<p>Tidak sedikit anak-anak di Indonesia tidak dapat mengenyam pendidikan di bangku sekolah karena keterbatasan biaya. Mereka terpaksa membantu orangtuanya bekerja demi terpenuhinya kebutuhan hidup sehari-hari.</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="prologue red">
+				<div class="picture">
+					<img src="assets/images/berhak-dididik.jpg" alt="Ilustrasi, anak mendapatkan pendidikan yang layak.">
+				</div>
+				<div class="text">
+					<h3>Semua orang berhak mendapatkan pendidikan</h3>
+					<p>Mereka yang kini belum mendapatkan pendidikan yang layak membutuhkan perhatian kita semua. Tidak akan cukup apabila kita hanya meratapi keadaan sambil terus menuntut pemerintah untuk membiayai pendidikan anak-anak tersebut. Mereka membutuhkan aksi nyata dari kita semua.</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="suggestion">
+				<h3>Mari kita wujudkan bersama!</h3>
+				<p>Bergabunglah bersama kami untuk membantu mereka yang membutuhkan pendidikan layaknya kami dan Anda dididik. Kalau bukan Anda yang peduli, siapa lagi? Kalau bisa sekarang, jangan dinanti-nanti. Berkontribusilah sekarang juga seperti ribuan relawan dan donatur kami!</p>
+				<br>
+				<a class="btn" href="contrib.html">Saya ikut!</a>
+			</div>
+		</section>
+		<section class="ask">
+			<div class="outer-wrapper">
+				<p>Ingin bertanya-tanya langsung? Hubungi:</p>
+				<p class="number">+62-274-123456</p>
+			</div>
+		</section>
+		<footer class="site-footer">
+			<div class="outer-wrapper">
+				<div class="text">
+					<h2>Yayasan Mendidik Bangsa</h2>
+					<p>
+						<strong>Alamat:</strong>
+						<br>
+						Bulaksumur, Depok, Sleman, Daerah Istimewa Yogyakarta<br>
+						<strong>Surel:</strong>
+						<br>
+						humas@mendidikbangsa.or.id
+					</p>
+					<br>
+					<p>&copy; 2016 Yayasan Mendidik Bangsa</p>
+				</div>
+				<div class="watermark">
+					<img src="assets/images/watermark.png" alt="Yayasan Mendidik Bangsa">
+				</div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+		<script type="text/javascript">
+			function gapHeight() {
+    			var height = $(".site-nav").height();
+    			$(".gap").css({
+      		  	"height": height
+    			});
+			}
+			function bannerHeight() {
+    			var navHeight = $(".site-nav").height();
+    			var height = $(window).height() - navHeight;
+    			$(".banner").css({
+      		  	"min-height": height
+    			});
+			}
+			window.addEventListener("resize", gapHeight);
+			window.addEventListener("resize", bannerHeight);
+			gapHeight();
+			bannerHeight();
+		</script>
+	</body>
+</html>
