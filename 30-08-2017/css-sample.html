@@ -31,12 +31,31 @@
 			padding-top: 4em;
 			box-sizing: border-box;
 		}
+		
+		@keyframes beatHeart {
+			0% {
+				transform: scale(1);
+			}
+			25% {
+				transform: scale(1.1);
+			}
+			40% {
+				transform: scale(1);
+			}
+			60% {
+				transform: scale(1.1);
+			}
+			100% {
+				transform: scale(1);
+			}
+		}
 		.heart {
 			color: red;
 			font-size: 2em;
 			line-height: 1.5em;
 			text-shadow: 0 2px 2px rgba(0,0,0,.2);
 			display: block;
+			animation: .8s infinite beatHeart;
 		}
 	</style>
 </head>
